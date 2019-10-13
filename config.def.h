@@ -11,8 +11,7 @@ static int borderpx = 2;
 /*
  * What program is execed by st depends of these precedence rules:
  * 1: program passed with -e
- * 2: utmp option
- * 3: SHELL environment variable
+ * 2: utmp option 3: SHELL environment variable
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
@@ -85,35 +84,12 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 float alpha = 0.9;
 
-/* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
-	"#282828",
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
-};
-
-
 /*
- * Default colors (colorname index)
- * foreground, background, cursor, reverse cursor
+ * themes
  */
-unsigned int defaultfg = 15;
-unsigned int defaultbg = 0;
-static unsigned int defaultcs = 15;
-static unsigned int defaultrcs = 0;
+/* #include "themes/default.h" */
+#include "themes/gruvbox-dark.h"
+/* #include "themes/gruvbox-light.h"  */
 
 /*
  * Default shape of cursor
