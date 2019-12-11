@@ -88,7 +88,8 @@ float alpha = 0.9;
  * themes
  */
 /* #include "themes/default.h" */
-#include "themes/gruvbox-dark.h"
+#include "themes/nord.h"
+/* #include "themes/gruvbox-dark.h"  */
 /* #include "themes/gruvbox-light.h"  */
 
 /*
